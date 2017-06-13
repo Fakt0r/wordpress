@@ -1,0 +1,114 @@
+/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+
+.swip_login {
+	border-style: none;
+	border-width:1px;
+	border-color: #888888;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:10px;
+	color: black;
+	position: fixed;
+	top:0px;
+	right: 0px;
+	left: auto;
+	width: 440px;
+	height: 70px;
+	overflow: visible;
+	background-color:white;
+	z-index: 2000;
+}
+
+@media (max-width:1200px){
+.swip_login {
+	top:70px;
+}
+}
+
+@media (max-width:980px){
+.swip_login {
+	position: absolute;
+}
+}
+
+@media (max-width:580px){
+.swip_login {
+	width: 100%;
+}
+}
+
+.swip_login_iframe {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	padding=0px;
+	margin=0px;
+}
+
+.swip_login_register {
+	border-style: none;
+	border-width:1px;
+	border-color: #888888;
+	padding:0px;
+	margin:0px;
+	position: fixed;
+	top:46px;
+	right: 35px;
+	left: auto;
+	z-index: 3001;
+	vertical-align:top;
+}
+
+@media (max-width:1200px){
+.swip_login_register {
+	top:116px;
+}
+}
+
+@media (max-width:980px){
+.swip_login_register {
+	position: absolute;
+}
+}
+
+.swip_register {
+	width: 950px;
+	height: 370px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+
+@media (max-width:980px){
+.swip_register {
+	width: 100%;
+}
+}
+
+@media (max-width:875px){
+.swip_register {
+	height: auto;
+}
+}
+
+.swip_register_iframe {
+	width: 100%;
+	min-height: 280px;
+	overflow: visible;
+}
+
+@media (max-width:875px){
+.swip_register_iframe {
+	min-height: 410px;
+}
+}
+
+.collapse.in {
+	z-index: 4000;
+}
