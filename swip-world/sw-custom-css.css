@@ -81,13 +81,13 @@
 
 @media (max-width:377px){
 .swip_login_register {
-	right:3% !important;
+	right:5% !important;
 }
 }
 
 @media (max-width:360px){
 .swip_login_register {
-	right:2% !important;
+	right:4% !important;
 }
 }
 

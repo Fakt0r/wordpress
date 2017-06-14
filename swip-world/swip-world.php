@@ -8,6 +8,8 @@ Author: Saeed Mughal
 Author URI: http://saeedmughal.com/
 */
 
+define( 'SWIP_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+
 function custom_login_css(){
   wp_register_style('custom-css', plugins_url() . '/swip-world/sw-custom-css.css' );
   wp_enqueue_style('custom-css');
