@@ -15,16 +15,16 @@ if( function_exists( 'ubermenu' ) && $config_id = ubermenu_get_menu_instance_by_
   <span class="visually-hidden"><?php _e( 'Navigation', '__x__' ); ?></span>
 </a>
 
-<nav class="x-nav-wrap desktop" role="navigation">
+<nav class="x-nav-wrap desktop aaaa" role="navigation">
   <?php x_output_primary_navigation(); ?>
 </nav>
 
-<?php
-// if( file_exists( SWIP_PLUGIN_PATH . 'custom-login.php' ) ){
-// 	include SWIP_PLUGIN_PATH . 'custom-login.php';
-// } 
-?>
-
+<div class='swip_login custom-login-button'>
+  <iframe src='https://www.swip.world/external_forms' id='login-iframe' class='swip_login_iframe' frameborder='0'></iframe>
+</div>
+<div class='swip_login_register custom-register'>
+  <a href='/#register' class='custom-register-button'>Register »</a>
+</div>
 
 <div class="x-nav-wrap mobile collapse">
   <?php x_output_primary_navigation(); ?>
