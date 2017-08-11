@@ -46,16 +46,16 @@ add_filter( 'woocommerce_variable_price_html', function( $price, $product ) {
 }, 10, 2 );
 
 
-
+/*
 // Override theme default specification for product # per row
 function loop_columns() {
 return 5; // 5 products per row
 }
 add_filter('loop_shop_columns', 'loop_columns', 999);
-
+*/
 /* Add CSS:
 .woocommerce ul.products li.product {
 ul.products li.product {
-.woocommerce ul.products li.product, .woocommerce-page ul.products li.product { width: 16%; }
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product { width: 16.8%; }
 }
 */
