@@ -10,3 +10,12 @@ Template: x
 
 */
 
+
+
+/* single_add_to_cart_button */
+
+.request_quote:before {
+		font-family: "FontAwesome";
+		content: "\f095";
+		padding-right: 0.5em;
+}
