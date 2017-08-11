@@ -23,3 +23,4 @@ add_filter( 'x_enqueue_parent_stylesheet', '__return_true' );
 // Additional Functions
 // =============================================================================
 
+add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_single_excerpt', 5);
