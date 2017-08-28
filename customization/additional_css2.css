@@ -1,0 +1,41 @@
+/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+.swip_register {
+	width: 950px;
+	height: 370px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+
+@media (max-width:980px){
+.swip_register {
+	width: 100%;
+}
+}
+
+@media (max-width:875px){
+.swip_register {
+	height: auto;
+}
+}
+
+.swip_register_iframe {
+	width: 100%;
+	min-height: 280px;
+	overflow: visible;
+}
+
+@media (max-width:875px){
+.swip_register_iframe {
+	min-height: 410px;
+}
+}
+
+.collapse.in {
+	z-index: 4000;
+}

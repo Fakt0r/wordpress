@@ -42,20 +42,49 @@ add_filter('woocommerce_get_availability_text', function($text, $product) {
 // Don't show price range for variable products
 
 add_filter( 'woocommerce_variable_price_html', function( $price, $product ) {
+	//$min_price = $product->get_variation_price( 'min', true );
+	//return "From $min_price";
 	return "";
 }, 10, 2 );
 
 
-/*
+
 // Override theme default specification for product # per row
+/*
 function loop_columns() {
 return 5; // 5 products per row
 }
 add_filter('loop_shop_columns', 'loop_columns', 999);
 */
 /* Add CSS:
-.woocommerce ul.products li.product {
-ul.products li.product {
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product { width: 16.8%; }
+*/
+
+
+// Show banner on Shop
+/*
+//WooCommerce Category Banner
+add_action ('woocommerce_archive_description' , 'promotional_banner',99);
+function promotional_banner() {
+  echo  '<img src="http://wp-staging.swip.world/wp-content/uploads/2017/08/Process.png" style="width: 100%; margin:0 0 20px 10px;">';
 }
+*/
+
+// Don't show products in Shop
+/*
+function custom_pre_get_posts_query( $q ) {
+
+    $tax_query = (array) $q->get( 'tax_query' );
+
+    $tax_query[] = array(
+           'taxonomy' => 'product_cat',
+           'field' => 'slug',
+           'terms' => array( 'clothing' ), // Don't display products in the clothing category on the shop page.
+           'operator' => 'IN'
+    );
+
+    $q->set( 'tax_query', $tax_query );
+
+}
+add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );
 */

@@ -1,0 +1,133 @@
+.text-white h2,
+.text-white p,
+.text-white .x-btn {
+  color: #fff;
+}
+
+.text-white .x-btn {
+  border-color: #fff;
+}
+
+.text-white .x-btn:hover {
+  opacity: 0.75;
+}
+
+.x-feature-box-title {
+  font-size: 24px;
+}
+
+.x-feature-box-text {
+  font-size: 16px;
+}
+
+.x-cite {
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+.h1 {
+	font-size: 80px;
+	color: rgb(51,51,51);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.h2 {
+font-size: 55px;
+	color: rgb(51,51,51);
+}
+
+.h3 {
+  font-size: 35px;
+	color: rgb(51,51,51);
+}
+
+.h4 {
+  font-size: 18px;
+	color: rgb(51,51,51);
+  text-transform: none;
+}
+
+.slogan {
+  font-size: 25px;
+	color: rgb(51,51,51);
+}
+
+.description {
+  font-size: 20px;
+	color: rgb(51,51,51);
+}
+
+.terms {
+	color: rgb(51,51,51);
+}
+
+
+
+@media (max-width:1250px){
+.h1 {
+font-size: 60px;
+}
+}
+
+@media (max-width:920px){
+.h1 {
+font-size: 50px;
+}
+}
+
+@media (max-width:920px){
+.h2 {
+font-size: 40px;
+}
+}
+
+@media (max-width:580px){
+.h3 {
+font-size: 30px;
+}
+}
+
+.x-nav-wrap.desktop {
+    float: left;
+    margin-left: 20px;
+}
+
+.x-container.max {
+    max-width: 1250px;
+}
+
+.x-container.width {
+    width: 95%;
+}
+
+.collapseomatic_content {
+  margin-left: 0px;
+}
+
+.pum-theme-1841 {
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+.woocommerce-error {
+  background-color: red;
+  color: black;
+}
+
+.cols-3, .woocommerce-ordering, .woocommerce-result-count {
+  display: none;
+}
+
+.product_meta {
+  font-size: 0.7rem;
+}
+
+.x-btn-navbar-woocommerce {
+  padding-top: 17px !important;
+}
+
+.ptp-bullet-item {
+  font-size: 16px !important;
+}
