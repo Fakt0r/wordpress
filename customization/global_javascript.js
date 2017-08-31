@@ -25,20 +25,17 @@ function getURLParameter(name) {
 }
 function checkLogin() {
   var visits = getCookie("visits");
-  console.log("visits: "+visits)
   if (visits != "") {
     var loginParam = parseInt(getURLParameter('login'));
-    console.log("login: "+loginParam)
     if (loginParam == 1)
     {
-      document.getElementsByClassName("custom-register-button")[0].click();
-      console.log("Open Popup");
+      if((item = document.getElementById("menu-item-3274")) != null)
+        item.click();
+      if((item = document.getElementById("menu-item-3284")) != null)
+        item.click();
     }
-    else
-      console.log("No action.");
   } else {
     setCookie("visits", 1, 1);
-    console.log("Set cookie");
   }
 }
 checkLogin();
