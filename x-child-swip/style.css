@@ -19,3 +19,141 @@ Template: x
 		content: "\f095";
 		padding-right: 0.5em;
 }
+
+span.price.tc-price span.amount {
+    overflow: hidden;
+    text-indent: -29px;
+    float: left;
+}
+/*Arslan Custom Css for WooCommerce*/
+.tm-epo-cart-option-value {
+    display: none;
+}
+
+strong.product-quantity {
+    display: none;
+}
+
+form.cart {
+    border-top: 1px solid;
+}
+tr.fee td {
+    text-align: right;
+}
+td.product-subtotal,tr.order-total td {
+    text-align: right;
+}
+tr.tm-epo-cart-row.tm-epo-cart-row-total.cart_item/*,
+tr.tm-epo-cart-row.cart_item td.product-thumbnail,
+tr.tm-epo-cart-row.cart_item td.product-remove,
+tr.tm-epo-cart-row.cart_item td.product-price,
+tr.tm-epo-cart-row.cart_item td.product-quantity*/
+{
+    display: none;
+}
+
+table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents tr:last-child {
+    display: none;
+}
+.cart_totals.calculated_shipping h2 {
+    display: none;
+}
+tr.tax-rate.tax-rate-ch-tax-8-vat-1 td,th.product-total {
+    text-align: right;
+}
+.woocommerce .cart-collaterals .cart_totals,form.woocommerce-cart-form {
+    margin: 0 !important;
+}
+input#tmcp_textfield_2,input#tmcp_textfield_4,input#tmcp_textfield_3{
+    height:2.2em;
+    margin-top: -6px;
+}
+input#tmcp_choice_2_0_3,input#tmcp_choice_0_0_1,input#tmcp_choice_1_0_2 {
+    display: none;
+}
+.CHF-div {
+    text-align: center;
+}
+.order_details tfoot tr:first-child {
+    display: none;
+}
+form.cart{
+    padding-top:85px;
+}
+p.minimum-price {
+    display: none;
+}
+tr.cart-subtotal {
+    display: none;
+}
+.order_details th.product-total {
+    text-align: left;
+}
+ul.wc-item-meta > li:first-child > p {
+    text-indent: -34px;
+    overflow: hidden;
+    word-spacing: 5px;
+}
+@media only screen and (min-width:768px){
+form.cart label {
+    width: 39%;
+    float: left;
+    font-family: "Montserrat",sans-serif;
+    color:#272727;
+}
+.cpf_hide_element.tm-cell.col-4.cpf-type-radio.trans-div {
+    width: 40%;
+}
+h6.tm-epo-field-label {
+    text-transform: unset;
+    font-size: 14px !important;
+}
+.tm-extra-product-options ul.tmcp-elements li.tmcp-field-wrap{
+    padding-top:.1em !important;
+}
+.mprice {
+    width: 15%;
+    float: left;
+    text-align: center;
+    font-weight: 700;
+    margin-top:6px;
+    font-family: "Montserrat",sans-serif;
+    color:#272727;
+    font-size:14px;
+}
+.cpf_hide_element.tm-cell.col-3.cpf-type-header.CHF-div {
+    width: 15%;
+}
+
+.cpf_hide_element.tm-cell.col-4.cpf-type-header.labeled-div {
+    width: 39%;
+}
+
+
+label.tm-epo-field-label {
+    width: 50% !important;
+    float: left !important;
+margin: 8px 0 0 !important;
+display:none !important
+}
+
+.tm-extra-product-options-container {
+    float: left !important;
+    width: 100% !important;
+} 
+.product .nyp label {
+    margin-top: 7px;
+}
+dt.tm-final-totals {
+    width: 50%;
+    margin-left: 5px;
+    float: left;
+    font-size: 23px;
+    line-height: 23px;
+}
+.woocommerce .cart-collaterals table th {
+    width: 55% !important;
+    margin-left: 30% !important;
+    text-indent: 22% !important;
+}
+}

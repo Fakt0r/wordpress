@@ -88,3 +88,23 @@ function custom_pre_get_posts_query( $q ) {
 }
 add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );
 */
+add_action('woocommerce_email_header', 'bbloomer_add_css_to_emails');
+  
+function bbloomer_add_css_to_emails() {
+?>
+<style type="text/css">
+ul > li:first-child > p {
+  text-indent: -34px;
+    overflow: hidden;
+    word-spacing: 5px;
+}
+</style>
+<?php
+}
+
+function bbloomer_only_one_in_cart( $cart_item_data ) {
+global $woocommerce;
+$woocommerce->cart->empty_cart();
+wc_add_notice( 'You have already a product in cart.', 'notice' );
+return $cart_item_data;
+}
