@@ -60,17 +60,19 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php if ( get_bloginfo('language') =='de-DE' ) : ?>
 <?php #if ($product_name =='Self-Service Brainstorming') : ?>
   <h2 style="color:#96588a;display:block;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left">Ausf&uuml;hrung</h2>
-    Bitte <a style="color: #15c; font-weight: 700" href="https://www.swip.world/projects/challenges/new" target="_blank">erstellen Sie nun Ihr Challenge-Projekt</a>.≈
-    Es ist wichtig, dass Sie Ihr Problem und was genau Sie suchen m&ouml;glichst pr&auml;zise beschreiben. Falls Sie Unterst&uuml;tzung w&uuml;nschen, nehmen Sie bitte mit uns <a style="color: #15c;" href="mailto:orders@swip.world" target="_blank">Kontakt auf</a>, damit wir Ihnen unsere Dienstleistungen anbieten k&ouml;nnen.<br>
-    Wenn Ihre Challenge bereit ist, klicken Sie auf "Submit", um es zu starten. Nachdem wir es gepr&uuml;ft haben, werden wir es ver&ouml;ffentlichen.<br>
-    Sie k&ouml;nnen gerne auch ein <a style="color: #15c;" href="https://www.swip.world/companies/new" target="_blank">Firmenprofil erstellen</a>.
+    <strong>Erstellen Sie nun Ihr Challenge-Projekt</strong>:<br>
+    <a style="color: #15c; font-weight: 700" href="https://www.swip.world/projects/challenges/new" target="_blank">https://www.swip.world/projects/challenges/new</a>.<br><br>
+    Es ist wichtig, dass Sie Ihr Problem und den von Ihnen erwarteten L&ouml;sungsansatz m&ouml;glichst pr&auml;zise beschreiben.<br>
+    Wenn Ihre Challenge bereit ist, klicken Sie auf "Submit", um es zu starten. Nachdem wir Ihren Text gepr&uuml;ft haben, werden wir Ihre Challenge ver&ouml;ffentlichen.<br>
+    Bitte <a style="color: #15c;" href="https://www.swip.world/companies/new" target="_blank">erstellen Sie ein Firmenprofil</a> als Informationsquelle für die Innovatoren.
 
  <?php else: ?>
    <h2 style="color:#96588a;display:block;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left">Delivery</h2>
-    Please <a style="color: #15c; font-weight: 700" href="https://www.swip.world/projects/challenges/new" target="_blank">create your own Challenge</a> project now.<br>
-    It is important that you specify your problem and what you need as clearly as possible. If you need assistance, please <a style="color: #15c;" href="mailto:orders@swip.world" target="_blank">get in touch</a> with us to offer our services.<br>
-    Once you’re ready, click on “Submit” to get your challenge going! After our review, we will publish it.<br>
-    You may also <a style="color: #15c;" href="https://www.swip.world/companies/new" target="_blank">create a company</a> profile page.
+    <strong>Create your own Challenge project now</strong>:<br>
+    <a style="color: #15c; font-weight: 700" href="https://www.swip.world/projects/challenges/new" target="_blank">https://www.swip.world/projects/challenges/new</a>.<br><br>
+    It is important that you specify your problem and the solution approach you're expecting as clearly as possible.<br>
+    Once you’re ready, click on “Submit” to get your challenge going! After we've reviewed your text, we will publish your challenge.<br>
+    Please also <a style="color: #15c;" href="https://www.swip.world/companies/new" target="_blank">create a company profile page</a>, which gives contributors additional information.
  
  <?php endif; ?>
 

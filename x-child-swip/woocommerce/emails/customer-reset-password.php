@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   <p><?php _e( 'Jemand hat angefordert, dass das Password von folgendem Konto zur&uuml;ckgesetzt werden soll:', 'woocommerce' ); ?></p>
   <p><?php printf( __( 'Benutzername: %s', 'woocommerce' ), $user_login ); ?></p>
   <p><?php _e( 'Falls das ein Versehen war, k&ouml;nnen Sie dieses E-Mail einfach ignorieren, und nichts passiert.', 'woocommerce' ); ?></p>
-  <p><?php _e( 'Im Ihr Passwort zur&uuml;ckzusetzen, rufen Sie bitte folgende Adresse auf:', 'woocommerce' ); ?></p>
+  <p><?php _e( 'Um Ihr Passwort zur&uuml;ckzusetzen, rufen Sie bitte folgende Adresse auf:', 'woocommerce' ); ?></p>
   <p>
     <a class="link" href="<?php echo esc_url( add_query_arg( array( 'key' => $reset_key, 'login' => rawurlencode( $user_login ) ), wc_get_endpoint_url( 'lost-password', '', wc_get_page_permalink( 'myaccount' ) ) ) ); ?>">
         <?php _e( 'Hier klicken um das Passwort zur&uuml;ckzusetzen', 'woocommerce' ); ?></a>
