@@ -25,7 +25,11 @@
   */
  do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
+<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+ <p><?php printf( __( 'Die Bezahlung Ihrer Bestellung #%1$d from %2$s ist fehlgeschlagen. Die Bestellung war wie folgt:', 'woocommerce' ), $order->get_order_number(), $order->get_formatted_billing_full_name() ); ?></p>
+<?php else: ?>
  <p><?php printf( __( 'Payment for order #%1$d from %2$s has failed. The order was as follows:', 'woocommerce' ), $order->get_order_number(), $order->get_formatted_billing_full_name() ); ?></p>
+<?php endif; ?>
 
  <?php
 

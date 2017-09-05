@@ -25,7 +25,11 @@
   */
  do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
+<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+ <p><?php printf( __( 'Sie haben eine Bestelung von %s erhalten. Die Bestellung ist wie folgt:', 'woocommerce' ), $order->get_formatted_billing_full_name() ); ?></p>
+<?php else: ?>
  <p><?php printf( __( 'You have received an order from %s. The order is as follows:', 'woocommerce' ), $order->get_formatted_billing_full_name() ); ?></p>
+<?php endif; ?>
 
  <?php
 

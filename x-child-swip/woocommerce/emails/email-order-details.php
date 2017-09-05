@@ -25,13 +25,36 @@ $text_align = is_rtl() ? 'right' : 'left';
 $bx=get_post_meta( $order->id, '_payment_method', true );
 if ( 'on-hold' == $order->status && 'bacs'==$bx ) :?>
 
-
 <section class="woocommerce-bacs-bank-details New" style="color: #636363;">
 
+
+<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+
+<h2 class="wc-bacs-bank-details-heading" style="color:#96588a;display:block;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left">Zahlungsanweisungen</h2>
+<p>Bitte bezahlen Sie den gesamten Betrag innert 30 Tagen auf folgendes Bankkonto:</p>
+<ul class="wc-bacs-bank-details order_details bacs_details">
+<li class="bank_name">Bank: <strong>Z&uuml;rcher
+Kantonalbank,Switzerland</strong>
+</li>
+<li class="bank_name">Konto lautend auf: <strong>Swiss Innovation Pool
+AG, 8887 Mels, Switzerland</strong>
+</li>
+<li class="account_number">Konto:
+<strong>1100-6033.247</strong>
+</li>
+<li class="iban">IBAN: <strong>CH64 0070 0110 0060 3324
+7</strong>
+</li>
+<li class="bic">BIC: <strong>ZKBKCHZZ80A</strong>
+</li>
+</ul>
+ 
+ <?php else: ?>
+ 
 <h2 class="wc-bacs-bank-details-heading" style="color:#96588a;display:block;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left">Payment Instructions</h2>
 <p>Please pay the total amount within 30 days to the following bank account:</p>
 <ul class="wc-bacs-bank-details order_details bacs_details">
-<li class="bank_name">Bank: <strong>Zürcher
+<li class="bank_name">Bank: <strong>Z&uuml;rcher
 Kantonalbank,Switzerland</strong>
 </li>
 <li class="bank_name">Account Owner: <strong>Swiss Innovation Pool
@@ -46,6 +69,16 @@ AG, 8887 Mels, Switzerland</strong>
 <li class="bic">BIC: <strong>ZKBKCHZZ80A</strong>
 </li>
 </ul>
+ 
+ <?php endif; ?>
+
+
+
+
+
+
+
+
 
 </section>
 
@@ -98,7 +131,7 @@ endif; ?>
 					<?php }
 					else
 					{
-						$result = preg_replace("/[^a-zA-Z :]+/", "", $fulllabel);?> 
+						$result = preg_replace("/[^a-zA-Z [:^print:] :]+/", "", $fulllabel);?> 
 						<th class="td" scope="row" colspan="2" style="text-align:<?php echo $text_align; ?>; <?php echo ( 1 === $i ) ? 'border-top-width: 4px;' : ''; ?>"><?php echo $result; ?></th>
 						<?php } ?>
 						

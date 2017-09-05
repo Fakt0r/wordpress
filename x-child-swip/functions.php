@@ -102,9 +102,14 @@ ul > li:first-child > p {
 <?php
 }
 
-function bbloomer_only_one_in_cart( $cart_item_data ) {
-global $woocommerce;
-$woocommerce->cart->empty_cart();
-wc_add_notice( 'You have already a product in cart.', 'notice' );
-return $cart_item_data;
+function theme_styles()  
+{ 
+
+
+if (get_bloginfo('language')=='de-DE'):
+
+	wp_enqueue_style( 'custom', get_stylesheet_directory_uri() . '/custom.css' );
+endif;
+
 }
+add_action('wp_enqueue_scripts', 'theme_styles');

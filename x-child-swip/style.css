@@ -14,6 +14,10 @@ Template: x
 
 /* single_add_to_cart_button */
 
+.german{
+    display:none;
+}
+
 .request_quote:before {
 		font-family: "FontAwesome";
 		content: "\f095";
@@ -145,7 +149,7 @@ display:none !important
     margin-top: 7px;
 }
 dt.tm-final-totals {
-    width: 50%;
+    width: 44%;
     margin-left: 5px;
     float: left;
     font-size: 23px;

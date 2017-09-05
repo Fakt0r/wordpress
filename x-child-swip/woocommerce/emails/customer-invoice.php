@@ -25,8 +25,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
+
 <?php if ( $order->has_status( 'pending' ) ) : ?>
-	<p><?php printf( __( 'An order has been created for you on %1$s. To pay for this order please use the following link: %2$s', 'woocommerce' ), get_bloginfo( 'name', 'display' ), '<a href="' . esc_url( $order->get_checkout_payment_url() ) . '">' . __( 'pay', 'woocommerce' ) . '</a>' ); ?></p>
+  <?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+    <p><?php printf( __( 'Eine Bestellung wurde f&uuml;r Sie auf %1$s erstellt. Um diese Bestellung zu bezahlen, klicken Sie bitte auf den folgenden Link: %2$s', 'woocommerce' ), get_bloginfo( 'name', 'display' ), '<a href="' . esc_url( $order->get_checkout_payment_url() ) . '">' . __( 'pay', 'woocommerce' ) . '</a>' ); ?></p>
+  <?php else: ?>
+    <p><?php printf( __( 'An order has been created for you on %1$s. To pay for this order please use the following link: %2$s', 'woocommerce' ), get_bloginfo( 'name', 'display' ), '<a href="' . esc_url( $order->get_checkout_payment_url() ) . '">' . __( 'pay', 'woocommerce' ) . '</a>' ); ?></p>
+  <?php endif; ?>
 <?php endif; ?>
 
 <?php

@@ -26,8 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_email_header', $email_heading, $email ); 
 
  
-
- ?>
+?>
 
 <p>
 
@@ -37,17 +36,34 @@ foreach($order->get_items() as $item) {
     $product_name = $item['name'];
 }
 
-if ($product_name =='Managed Brainstorming') {
-  printf( __( "Hi there. Your recent order on %s has been completed as your challenge has been closed. Your order details are shown below for your reference:", 'woocommerce' ), get_option( 'blogname' ) );
-}
-else if ($product_name =='Self-Service Brainstorming') {
-  printf( __( "Hi there. Your recent order on %s has been completed as your challenge has been published. Your order details are shown below for your reference:", 'woocommerce' ), get_option( 'blogname' ) );
-}
-else {
-  printf( __( "Hi there. Your recent order on %s has been completed. Your order details are shown below for your reference:", 'woocommerce' ), get_option( 'blogname' ) );
+if ( get_bloginfo('language') =='de-DE' ) {
+  if ($product_name =='Managed Brainstorming') {
+    printf( __( "Guten Tag. Ihre Bestellung auf %s ist abgeschlossen, da auch Ihre Challenge nun abgeschlossen ist. Unten finden Sie die Bestelldaten zu Ihrer Information:", 'woocommerce' ), get_option( 'blogname' ) );
+  }
+  else if ($product_name =='Self-Service Brainstorming') {
+    printf( __( "Guten Tag. Ihre Bestellung auf %s ist abgeschlossen, da Ihre Challenge nun publiziert wurde. Unten finden Sie die Bestelldaten zu Ihrer Information:", 'woocommerce' ), get_option( 'blogname' ) );
+  }
+  else {
+    printf( __( "Guten Tag. Ihre Bestellung auf %s ist abgeschlossen. Unten finden Sie die Bestelldaten zu Ihrer Information:", 'woocommerce' ), get_option( 'blogname' ) );
+  }
+  
+} else {
+
+  if ($product_name =='Managed Brainstorming') {
+    printf( __( "Hi there. Your recent order on %s has been completed as your challenge has been closed. Your order details are shown below for your reference:", 'woocommerce' ), get_option( 'blogname' ) );
+  }
+  else if ($product_name =='Self-Service Brainstorming') {
+    printf( __( "Hi there. Your recent order on %s has been completed as your challenge has been published. Your order details are shown below for your reference:", 'woocommerce' ), get_option( 'blogname' ) );
+  }
+  else {
+    printf( __( "Hi there. Your recent order on %s has been completed. Your order details are shown below for your reference:", 'woocommerce' ), get_option( 'blogname' ) );
+  }
+
 }
 
-?></p>
+?>
+
+</p>
 
 <?php
 
