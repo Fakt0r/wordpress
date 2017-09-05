@@ -25,11 +25,19 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<p><?php _e( "Hello, a note has just been added to your order:", 'woocommerce' ); ?></p>
+<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+  <p><?php _e( "Guten Tag, zu Ihrer Bestellung wurde eine Notiz hinzugefügt:", 'woocommerce' ); ?></p>
+<?php else: ?>
+  <p><?php _e( "Hello, a note has just been added to your order:", 'woocommerce' ); ?></p>
+<?php endif; ?>
 
 <blockquote><?php echo wpautop( wptexturize( $customer_note ) ) ?></blockquote>
 
-<p><?php _e( "For your reference, your order details are shown below.", 'woocommerce' ); ?></p>
+<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+  <p><?php _e( "Unten finden Sie die Bestelldaten zu Ihrer Information.", 'woocommerce' ); ?></p>
+<?php else: ?>
+  <p><?php _e( "For your reference, your order details are shown below.", 'woocommerce' ); ?></p>
+<?php endif; ?>
 
 <?php
 

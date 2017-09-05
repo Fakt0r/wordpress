@@ -25,7 +25,11 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<p><?php _e( "Your order is on-hold until we confirm payment has been received. Your order details are shown below for your reference:", 'woocommerce' ); ?></p>
+<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+  <p><?php _e( "Deine Bestellung ist in Wartestellung, bis wir deine Zahlung erhalten haben. Unten finden Sie die Bestelldaten zu Ihrer Information:", 'woocommerce' ); ?></p>
+<?php else: ?>
+  <p><?php _e( "Your order is on-hold until we confirm payment has been received. Your order details are shown below for your reference:", 'woocommerce' ); ?></p>
+<?php endif; ?>
 
 <?php
 
