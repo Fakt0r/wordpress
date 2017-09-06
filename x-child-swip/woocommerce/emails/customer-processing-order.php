@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+<?php if ( get_bloginfo('language') =='de-DE-formal' ) : ?>
   <p><?php _e( "Wir haben Ihre Bestellung erhalten. Sie ist nun in Bearbeitung. Unten finden Sie die Bestelldaten zu Ihrer Information.", 'woocommerce' ); ?></p>
 <?php else: ?>
   <p><?php _e( "Your order has been received and is now being processed. Your order details are shown below for your reference.", 'woocommerce' ); ?></p>
@@ -39,13 +39,14 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 
 <div style="color: #636363" class="">
+<?php // printf("Language: '%s'<br>\n",get_bloginfo('language')); ?>
 
 <?php if ($product_name =='Managed Brainstorming') : ?>
 
-  <?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+  <?php if ( get_bloginfo('language') =='de-DE-formal' ) : ?>
   <h2 style="color:#96588a;display:block;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left">Ausf&uuml;hrung</h2>
   Wir nehmen in K&uuml;rze Kontakt mit Ihnen auf, um Sie bei dem Aufsetzen der Challenge zu unterst&uuml;tzen. Falls Sie m&ouml;chten, k&ouml;nnen Sie in der Zwischenzeit schon einen <a style="color: #15c; font-weight: 700" href="https://www.swip.world/projects/challenges/new" target="_blank">ersten Entwurf erstellen</a>.<br>
-  Bitte stellen Sie sicher, dass Sie sich auf <a style="color: #15c;" href="https://www.swip.world/" target="_blank">swip.world</a> schon mit Ihrem vollständigen Namen registriert haben. Sie k&ouml;nnen nach Bedarf auch eine <a style="color: #15c;" href="https://www.swip.world/companies/new" target="_blank">Firmenseite erstelen</a>.
+  Bitte stellen Sie sicher, dass Sie sich auf <a style="color: #15c;" href="https://www.swip.world/" target="_blank">swip.world</a> schon mit Ihrem vollständigen Namen registriert haben. Sie k&ouml;nnen nach Bedarf auch eine <a style="color: #15c;" href="https://www.swip.world/companies/new" target="_blank">Firmenseite erstellen</a>.
 
   <?php else: ?>
   <h2 style="color:#96588a;display:block;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left">Delivery</h2>
@@ -57,7 +58,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php else: ?>
 
-<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+<?php if ( get_bloginfo('language') =='de-DE-formal' ) : ?>
 <?php #if ($product_name =='Self-Service Brainstorming') : ?>
   <h2 style="color:#96588a;display:block;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left">Ausf&uuml;hrung</h2>
     <strong>Erstellen Sie nun Ihr Challenge-Projekt</strong>:<br>

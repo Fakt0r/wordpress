@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+<?php if ( get_bloginfo('language') =='de-DE-formal' ) : ?>
   <p><?php _e( 'Jemand hat angefordert, dass das Password von folgendem Konto zur&uuml;ckgesetzt werden soll:', 'woocommerce' ); ?></p>
   <p><?php printf( __( 'Benutzername: %s', 'woocommerce' ), $user_login ); ?></p>
   <p><?php _e( 'Falls das ein Versehen war, k&ouml;nnen Sie dieses E-Mail einfach ignorieren, und nichts passiert.', 'woocommerce' ); ?></p>

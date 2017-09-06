@@ -25,7 +25,7 @@
   */
  do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+<?php if ( get_bloginfo('language') =='de-DE-formal' ) : ?>
  <p><?php printf( __( 'Ihre Bestellung #%1$d vom %2$s wurde storniert. Die Bestellung war wie folgt:', 'woocommerce' ), $order->get_order_number(), $order->get_formatted_billing_full_name() ); ?></p>
 <?php else: ?>
  <p><?php printf( __( 'The order #%1$d from %2$s has been cancelled. The order was as follows:', 'woocommerce' ), $order->get_order_number(), $order->get_formatted_billing_full_name() ); ?></p>

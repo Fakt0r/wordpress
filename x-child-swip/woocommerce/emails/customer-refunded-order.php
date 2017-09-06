@@ -27,12 +27,12 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <p><?php
 	if ( $partial_refund ) {
-    if ( get_bloginfo('language') =='de-DE' )
+    if ( get_bloginfo('language') =='de-DE-formal' )
       printf( __( 'Guten Tag. Ihre Bestellung %s wurde teilweise r&uuml;ckerstattet.', 'woocommerce' ), get_option( 'blogname' ) );
     else
       printf( __( 'Hi there. Your order on %s has been partially refunded.', 'woocommerce' ), get_option( 'blogname' ) );
 	} else {
-    if ( get_bloginfo('language') =='de-DE' )
+    if ( get_bloginfo('language') =='de-DE-formal' )
       printf( __( 'Guten Tag. Ihre Bestellung %s wurde r&uuml;ckerstattet.', 'woocommerce' ), get_option( 'blogname' ) );
     else
       printf( __( 'Hi there. Your order on %s has been refunded.', 'woocommerce' ), get_option( 'blogname' ) );

@@ -28,7 +28,7 @@ if ( 'on-hold' == $order->status && 'bacs'==$bx ) :?>
 <section class="woocommerce-bacs-bank-details New" style="color: #636363;">
 
 
-<?php if ( get_bloginfo('language') =='de-DE' ) : ?>
+<?php if ( get_bloginfo('language') =='de-DE-formal' ) : ?>
 
 <h2 class="wc-bacs-bank-details-heading" style="color:#96588a;display:block;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left">Zahlungsanweisungen</h2>
 <p>Bitte bezahlen Sie den gesamten Betrag innert 30 Tagen auf folgendes Bankkonto:</p>
