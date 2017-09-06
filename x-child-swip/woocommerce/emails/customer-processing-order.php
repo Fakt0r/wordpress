@@ -59,7 +59,6 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php else: ?>
 
 <?php if ( get_bloginfo('language') =='de-DE-formal' ) : ?>
-<?php #if ($product_name =='Self-Service Brainstorming') : ?>
   <h2 style="color:#96588a;display:block;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left">Ausf&uuml;hrung</h2>
     <strong>Erstellen Sie nun Ihr Challenge-Projekt</strong>:<br>
     <a style="color: #15c; font-weight: 700" href="https://www.swip.world/projects/challenges/new" target="_blank">https://www.swip.world/projects/challenges/new</a>.<br><br>

@@ -40,7 +40,7 @@ if ( get_bloginfo('language') =='de-DE-formal' ) {
   if ($product_name =='Managed Brainstorming') {
     printf( __( "Guten Tag. Ihre Bestellung auf %s ist abgeschlossen, da auch Ihre Challenge nun abgeschlossen ist. Unten finden Sie die Bestelldaten zu Ihrer Information:", 'woocommerce' ), get_option( 'blogname' ) );
   }
-  else if ($product_name =='Self-Service Brainstorming') {
+  else if ($product_name =='Selfservice-Brainstorming') {
     printf( __( "Guten Tag. Ihre Bestellung auf %s ist abgeschlossen, da Ihre Challenge nun publiziert wurde. Unten finden Sie die Bestelldaten zu Ihrer Information:", 'woocommerce' ), get_option( 'blogname' ) );
   }
   else {
