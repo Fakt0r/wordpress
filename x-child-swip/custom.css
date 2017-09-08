@@ -1,0 +1,20 @@
+.german{
+    display:block !important;
+}
+.english{
+    display:none !important;
+}
+.x-nav-wrap.desktop {
+    margin-left: 0 !important;
+}
+
+@media only screen and (min-width:1024px) and (max-width:1305px){
+ 
+ .x-navbar .desktop .x-nav > li.x-menu-item-woocommerce {
+    margin-left: 8px !important;
+}
+.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce) {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+}
+}

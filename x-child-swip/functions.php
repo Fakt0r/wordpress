@@ -106,9 +106,11 @@ function theme_styles()
 { 
 
 
-if (get_bloginfo('language')=='de-DE'):
+if (get_bloginfo('language')=='de-DE-formal'):
 
 	wp_enqueue_style( 'custom', get_stylesheet_directory_uri() . '/custom.css' );
+	else:
+	    wp_enqueue_style( 'custom', get_stylesheet_directory_uri() . '/custom-en.css' );
 endif;
 
 }

@@ -17,7 +17,9 @@ Template: x
 .german{
     display:none;
 }
-
+.woocommerce .cart-collaterals .cart_totals h2{
+    display:none;
+}
 .request_quote:before {
 		font-family: "FontAwesome";
 		content: "\f095";
@@ -30,6 +32,15 @@ span.price.tc-price span.amount {
     float: left;
 }
 /*Arslan Custom Css for WooCommerce*/
+
+div#popmake-1847 {
+    width: 100% !important;
+    max-width: 100%;
+}
+
+iframe{
+    max-width:100%;
+}
 .tm-epo-cart-option-value {
     display: none;
 }
@@ -98,7 +109,13 @@ ul.wc-item-meta > li:first-child > p {
     overflow: hidden;
     word-spacing: 5px;
 }
-@media only screen and (min-width:768px){
+label.tm-epo-field-label {
+    width: 50% !important;
+    float: left !important;
+margin: 8px 0 0 !important;
+display:none !important
+}
+@media only screen and (min-width:769px){
 form.cart label {
     width: 39%;
     float: left;
@@ -134,13 +151,6 @@ h6.tm-epo-field-label {
 }
 
 
-label.tm-epo-field-label {
-    width: 50% !important;
-    float: left !important;
-margin: 8px 0 0 !important;
-display:none !important
-}
-
 .tm-extra-product-options-container {
     float: left !important;
     width: 100% !important;
@@ -160,4 +170,67 @@ dt.tm-final-totals {
     margin-left: 30% !important;
     text-indent: 22% !important;
 }
+}
+
+@media only screen and (max-width:1024px){
+    .x-nav-wrap.desktop{
+        display:none !important;
+    }
+    .masthead-inline .x-btn-navbar{
+        display:block !important;
+        float:right;
+    }
+    .x-nav-wrap.mobile.collapse.in {
+    display: block;
+}
+.x-nav-wrap.mobile.collapse {
+    display: none;
+}
+}
+@media only screen and (max-width:768px){
+    
+.ips_h_content_1 div#popup_register,.ips_h_content_6 div#popup_register {
+    height: 575px !important;
+}
+
+.ips_h_content_2 div#popup_register1 {
+    height: 575px !important;
+}
+.ips_h_content_4 div#popup_register_de,.ips_h_content_5 div#popup_register_de,.ips_h_content_3 div#popup_register1_de {
+    height: 600px !important;
+}
+
+
+.woocommerce div.product .summary {
+    width: 100% !important;
+}
+.cpf_hide_element.tm-cell.col-4.cpf-type-header.labeled-div {
+    width: 40%;
+}
+.cpf_hide_element.tm-cell.col-3.cpf-type-header.CHF-div{
+    width:20%;
+}
+.cpf_hide_element.tm-cell.col-4.cpf-type-radio {
+    width: 40%;
+}
+.cpf_hide_element.tm-cell.col-4.cpf-type-textfield {
+    width: 40%;
+}
+}
+
+@media only screen and (max-width:480px){
+    
+    .cpf_hide_element.tm-cell.col-4.cpf-type-header.labeled-div {
+    width: 100%;
+}
+.cpf_hide_element.tm-cell.col-3.cpf-type-header.CHF-div{
+    width:25%;
+}
+.cpf_hide_element.tm-cell.col-4.cpf-type-radio {
+    width: 75%;
+}
+.cpf_hide_element.tm-cell.col-4.cpf-type-textfield {
+    width: 75%;
+}
+    
 }
