@@ -141,7 +141,7 @@ if (!class_exists('URL_Rotator_manager')) {
          if (isset($_POST['url_rotator_manager_new_url_submit']) and $_POST['url_rotator_manager_new_url_submit'] != '') {
 
             $name = sanitize_title($_POST['url_rotator_manager_name']);
-            $url = esc_url($_POST['url_rotator_manager_url'], 'http');
+            $url = $_POST['url_rotator_manager_url'];
             $save = TRUE;
 
             $map = get_option('url_rotator_manager_map', array());
