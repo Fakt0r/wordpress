@@ -115,3 +115,13 @@ endif;
 
 }
 add_action('wp_enqueue_scripts', 'theme_styles');
+
+
+
+// Disable URL in comment forms
+// http://crunchify.com/how-to-remove-url-website-field-from-wordpress-comment-form/
+function crunchify_disable_comment_url($fields) { 
+    unset($fields['url']);
+    return $fields;
+}
+add_filter('comment_form_default_fields','crunchify_disable_comment_url');
